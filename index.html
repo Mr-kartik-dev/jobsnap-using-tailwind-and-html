@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOBSNAP</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <div class="w-full min-h-screen font-montserrat bg-[#FDFDFD]">
+
+        <!-- Header section -->
+        <div class="md:flex w-full md:justify-center md:items-center flex-col md:p-7">
+            <nav class="w-full p-6 md:py-0 md:p-3 md:px-10 flex items-center justify-center flex-col md:flex-row">
+
+                <div class="md:w-[30%] w-full">
+                    <h1 class="text-2xl md:text-left text-center"><i class="fa-solid fa-briefcase"></i>JOBSNAP</h1>
+                </div>
+                <div class="md:w-[40%] w-full list-none py-4">
+                    <ul
+                        class="flex space-x-5 md:space-x-15 md:text-lg md:items-center md:justify-center items-center justify-center">
+                        <li>Home</li>
+                        <li>Explore</li>
+                        <li>Post a job</li>
+                        <li>Search</li>
+                    </ul>
+                </div>
+                <div class="md:w-[30%] md:text-right text-center">
+                    <button class="text-white bg-black px-7.5 py-2 rounded-lg text-lg font-bold hover:shadow-xl">Log
+                        In</button>
+                </div>
+            </nav>
+        </div>
+        <!-- Header section end -->
+
+        <div class="md:w-[95%] md:min-h-screen h-auto pb-8 md:pb-0 md:h-44 relative md:relative md:ml-9 border-b">
+            <div class="md:absolute md:left-15 md:top-90 absolute left-3 top-4"><img src="./src/assets/clock.svg"
+                    class="w-12 md:w-20"></div>
+            <div class="md:absolute md:left-60 md:top-40 absolute left-[42%] top-4"><img src="./src/assets/id.svg"
+                    class="w-12 md:w-20"></div>
+            <div class="hidden md:block md:absolute md:left-170 md:top-17"><img src="./src/assets/bag.svg"
+                    class="w-20 "></div>
+            <div class="hidden md:block md:absolute md:right-60 md:top-40"><img src="./src/assets/folder.svg"
+                    class="w-20 "></div>
+            <div class="md:absolute md:right-15 md:top-90 absolute right-3 top-4"><img src="./src/assets/smile.svg"
+                    class="w-12 md:w-20"></div>
+            <div class="md:flex md:justify-center md:items-center md:flex-col md:w-full flex flex-col">
+                <h1 class="md:text-7xl text-4xl font-bold pt-24 md:pt-72 md:w-[50%] px-4 md:px-0 text-center">Over <span
+                        class="text-blue-500">5,000 jobs</span> are waiting for you</h1>
+                <p class="text-gray-500 text-lg md:text-2xl md:w-[25%] mt-4 md:mt-6 px-4 md:px-0 text-center">Work with
+                    the best companies, hire the
+                    experienced professionls</p>
+
+                <div
+                    class="mt-6 md:mt-12 border rounded-2xl w-[90%] mx-auto md:w-[58%] flex flex-col md:flex-row gap-3 md:gap-0 p-3 md:p-4">
+                    <input type="text" placeholder="What are you looking for?"
+                        class="border rounded-lg p-2 md:border-none md:rounded-none md:p-0 md:mr-7">
+                    <input type="text" placeholder="Enter location"
+                        class="border rounded-lg p-2 md:border-0 md:border-l md:rounded-none md:p-0">
+                    <button class="text-white bg-black rounded-md px-6 py-2 md:ml-80">Search</button>
+                </div>
+                <h2
+                    class="text-blue-600 text-lg mt-3 text-center md:text-left md:pr-0 md:items-end md:justify-end md:ml-170 md:mt-2 cursor-pointer">
+                    Advanced Search</h2>
+
+            </div>
+        </div>
+
+
+        <h1 class="text-center md:pt-15 text-4xl font-bold py-17">Most popular categories</h1>
+
+        <div
+            class="grid grid-cols-2 md:grid-cols-4 md:px-30 px-0 w-[90%] mx-auto md:w-full [&>div]:border [&>div]:rounded-3xl [&>div]:hover:shadow-2xl py-8 [&>div]:py-9 gap-4 md:gap-6 min-h-96 p-5 md:pt-3">
+            <div class="w-full bg-white border p-4 ">
+                <div class="bg-[#BCEEE0] rounded-full w-19 h-19 flex items-center justify-center">
+                    <img src="./src/assets/dollar.svg" class="w-13 h-14">
+                </div>
+                <h1 class="my-2 text-xl md:text-2xl font-medium">
+                    Finance
+                </h1>
+                <p class="text-gray-500">1,720 posting</p>
+            </div>
+            <div class="w-full bg-white border p-4 ">
+                <div class="bg-[#FFD0FC] rounded-full w-19 h-19 flex items-center justify-center">
+                    <img src="./src/assets/speaker.svg" class="w-13 h-14">
+                </div>
+                <h1 class="my-2 text-xl md:text-2xl font-medium">
+                    Marketing
+                </h1>
+                <p class="text-gray-500">1,720 posting</p>
+            </div>
+            <div class="w-full bg-white border p-4 ">
+                <div class="bg-[#C5F0F8] rounded-full w-19 h-19 flex items-center justify-center">
+                    <img src="./src/assets/html.svg" class="w-13 h-14">
+                </div>
+                <h1 class="my-2 text-xl md:text-2xl font-medium">
+                    IT services
+                </h1>
+                <p class="text-gray-500">1,720 posting</p>
+            </div>
+            <div class="w-full bg-white border p-4 ">
+                <div class="bg-[#CBF0B0] rounded-full w-19 h-19 flex items-center justify-center">
+                    <img src="./src/assets/science.svg" class="w-13 h-14">
+                </div>
+                <h1 class="my-2 text-xl md:text-2xl font-medium">
+                    Science
+                </h1>
+                <p class="text-gray-500">1,720 posting</p>
+            </div>
+            <div class="w-full bg-white border p-4 ">
+                <div class="bg-[#D7D0FF] rounded-full w-19 h-19 flex items-center justify-center">
+                    <img src="./src/assets/tech.svg" class="w-13 h-14">
+                </div>
+                <h1 class="my-2 text-xl md:text-2xl font-medium">
+                    Tech
+                </h1>
+                <p class="text-gray-500">1,720 posting</p>
+            </div>
+            <div class="w-full bg-white border p-4 ">
+                <div class="bg-[#F3F9AA] rounded-full w-19 h-19 flex items-center justify-center">
+                    <img src="./src/assets/gastronamy.svg" class="w-13 h-14">
+                </div>
+                <h1 class="my-2 text-xl md:text-2xl font-medium">
+                    Gastronamy
+                </h1>
+                <p class="text-gray-500">1,720 posting</p>
+            </div>
+            <div class="w-full bg-white border p-4 ">
+                <div class="bg-[#BCEEE0] rounded-full w-19 h-19 flex items-center justify-center">
+                    <img src="./src/assets/sales.svg" class="w-13 h-14">
+                </div>
+                <h1 class="my-2 text-xl md:text-2xl font-medium">
+                    Sales
+                </h1>
+                <p class="text-gray-500">1,720 posting</p>
+            </div>
+            <div
+                class="w-full max-w-[320px] min-h-52 bg-[#4869D7] border border-[#25365B] rounded-[20px] md:p-8 p-5 relative shadow-sm">
+                <h1 class="text-[30px] leading-tight font-medium text-white">
+                    +10K jobs
+                </h1>
+                <h3 class="text-white text-[18px] mt-3">
+                    Available now!
+                </h3>
+                <div class="flex items-center justify-between gap-2 mt-auto pt-4">
+                    <button class="w-32 h-10 bg-transparent border border-white/80 rounded-xl text-white ">
+                        View all
+                    </button>
+                    <img src="./src/assets/up arrow.svg" class="w-12 h-12 ">
+                </div>
+            </div>
+        </div>
+
+        <div class="border-b">
+            <h1 class="text-4xl font-bold text-center pt-17">Promoted Companies</h1>
+            <div
+                class="w-full md:w-[90%] min-h-80 my-8 md:my-18 grid grid-cols-2 gap-4 md:mb-16 md:ml-17 md:flex md:justify-center md:items-center md:gap-6 [&>div]:rounded-4xl [&>div]:hover:shadow-2xl">
+
+                <div
+                    class=" md:w-[23%] w-[90%] justify-self-center bg-[#FFD0FC] border md:h-80 h-60 md:flex md:flex-col justify-center items-center flex flex-col">
+                    <div class="md:w-20 md:h-20 flex items-center justify-center bg-black rounded-2xl mt-8">
+                        <img src="./src/assets/star.svg" class="h-15 w-15 text-black">
+                    </div>
+                    <h1 class="text-center text-2xl font-bold pt-6">Unicorn</h1>
+                    <p class="text-center text-md">30 Jobs</p>
+                    <button
+                        class="bg-transparent border rounded-xl md:w-45 md:h-11 w-30 h-8 text-md my-3 cursor-pointer">View</button>
+                </div>
+
+                <div
+                    class="md:w-[23%] w-[90%] justify-self-center bg-[#D7D0FF] border md:h-80 h-60 md:flex md:flex-col justify-center items-center flex flex-col">
+                    <div class="w-20 h-20 flex items-center justify-center bg-black rounded-2xl mt-8">
+                        <img src="./src/assets/horse.svg" class="h-15 w-15 text-black">
+                    </div>
+                    <h1 class="text-center text-2xl font-bold pt-6">Tech Foals</h1>
+                    <p class="text-center text-md">30 Jobs</p>
+                    <button
+                        class="bg-transparent border rounded-2xl md:w-45 md:h-11 w-30 h-8 text-md my-3 cursor-pointer">View</button>
+                </div>
+
+                <div
+                    class="md:w-[23%] w-[90%] justify-self-center bg-[#BCEEE0] border md:h-80 h-60 md:flex md:flex-col justify-center items-center flex flex-col">
+                    <div class="w-20 h-20 flex items-center justify-center bg-black rounded-2xl mt-8">
+                        <img src="./src/assets/bank.svg" class="h-15 w-15 text-black">
+                    </div>
+                    <h1 class="text-center text-2xl font-bold pt-6">B Bank</h1>
+                    <p class="text-center text-md">30 Jobs</p>
+                    <button
+                        class="bg-transparent border rounded-2xl md:w-45 md:h-11 w-30 h-8 text-md my-3 cursor-pointer">View</button>
+                </div>
+
+                <div
+                    class="md:w-[23%] w-[90%] justify-self-center bg-[#F3F9AA] border md:h-80 h-60 md:flex md:flex-col justify-center items-center flex flex-col">
+                    <div class=" flex items-center justify-center w-20 h-20 bg-black rounded-2xl mt-8">
+                        <img src="./src/assets/burger.svg" class="h-10 w-15 P-15 text-black">
+                    </div>
+                    <h1 class="text-center text-2xl font-bold pt-6">McBurger</h1>
+                    <p class="text-center text-md">30 Jobs</p>
+                    <button
+                        class="bg-transparent border rounded-2xl md:w-45 md:h-11 w-30 h-8 text-md my-3 cursor-pointer">View</button>
+
+                </div>
+            </div>
+        </div>
+
+
+        <h1 class="text-4xl font-bold text-center pt-17">Boost your careers</h1>
+
+        <div
+            class=" md:mt-15 w-full md:w-[95%] md:ml-9 md:grid grid-cols-1 md:grid-cols-3 gap-7 md:px-10 min-h-140 p-3 md:pb-15 md:[&>div]:border [&>div]:rounded-2xl [&>div]:hover:shadow-2xl">
+            <div class="h-90">
+                <div class="bg-[#597AE8] relative md:h-50 md:w-100 h-44 w-auto rounded-2xl m-5 border">
+                    <img src="./src/assets/computer.svg" class="w-20 h-20 absolute top-10 left-25">
+                    <img src="./src/assets/girl.svg" class="w-20 h-20 absolute top-20 left-43">
+                    <img src="./src/assets/star 2.svg" class="w-20 h-20 absolute top-8 left-55">
+                </div>
+                <h1 class="text-3xl m-5">The most attractive fields to work in</h1>
+                <p class="m-5 text-gray-500">Elena S., 5 min. read</p>
+
+            </div>
+
+            <div class="h-90">
+                <div class="bg-[#597AE8] md:h-50 md:w-100 h-44 w-auto rounded-2xl m-5 border relative">
+                    <img src="./src/assets/people.svg"
+                        class="md:w-25 md:h-25 w-20 h-20 absolute md:left-35 md:top-17 top-12 right-35">
+                    <img src="./src/assets/sales.svg"
+                        class="md:w-13 md:h-12 w-17 h-17 absolute md:top-10 md:right-22 top-5 right-15" alt="">
+                    <img src="./src/assets/q.svg"
+                        class="md:w-13 md:h-12 w-15 h-15 absolute md:top-28 md:right-22 bottom-5 right-15" alt="">
+                </div>
+                <h1 class="text-3xl m-5">How to keep your team efficient</h1>
+                <p class="m-5 text-gray-500">Harold M., 8 min. read</p>
+            </div>
+
+            <div class="h-90">
+                <div class="bg-[#597AE8] md:h-50 md:w-100 h-44 w-auto rounded-2xl m-5 border relative">
+                    <img src="./src/assets/smile.svg" class="absolute w-20 h-20 top-15 right-55">
+                    <img src="./src/assets/sciencelight.svg" class="absolute w-20 h-20 top-15 right-35" alt="">
+                </div>
+                <h1 class="text-3xl m-5">How to land a job in tech industry</h1>
+                <p class="m-5 text-gray-500">Jessica P., 3 min. read</p>
+            </div>
+
+            <div class="h-30 flex flex-row md:flex md:flex-row gap-0">
+                <div class="w-20 h-20 bg-[#597AE8] border rounded-full m-5 flex items-center justify-center">
+                    <img src="./src/assets/pencil.svg" class="w-15">
+                </div>
+                <h1 class="text-2xl m-5">How to write<br> a good CV</h1>
+                <div class="relative"><img src="./src/assets/up arrow.svg" class="w-10 h-10 absolute right-1"></div>
+            </div>
+
+            <div class="h-30 flex flex-row md:flex md:flex-row">
+                <div class="w-20 h-20 bg-[#597AE8] border rounded-full m-5 flex justify-center items-center">
+                    <img src="./src/assets/folder.svg" class="w-15">
+                </div>
+                <h1 class="text-2xl m-5">Compare<br> your salary</h1>
+
+            </div>
+
+            <div class="h-30 flex flex-row">
+                <div class="w-20 h-20 bg-[#597AE8] border rounded-full m-5 flex justify-center items-center">
+                    <img src="./src/assets/calculator.svg" class="w-10">
+                </div>
+                <h1 class="text-2xl m-5">Tax calculator</h1>
+
+            </div>
+        </div>
+
+        <div class="w-full my-10 bg-gray-100 px-6 pb-6 md:pb-0 md:px-18 h-auto md:h-80 mb-0 flex flex-col">
+            <h1 class="text-2xl md:text-left py-6 text-center"><i class="fa-solid fa-briefcase"></i>JOBSNAP</h1>
+            <div class="flex flex-wrap w-full">
+                <div class="w-1/2 md:w-[25%] mb-4 md:mb-0">
+                    <ul class="text-lg md:leading-7 font-light">
+                        <li class="font-bold">Job offers</li>
+                        <li>Job openings</li>
+                        <li>Employers</li>
+                        <li>Parti-time jobs</li>
+                        <li>Students</li>
+                        <li>NGO</li>
+                        <li>Remote work</li>
+                    </ul>
+                </div>
+                <div class="w-1/2 md:w-[25%] mb-4 md:mb-0">
+                    <ul class="text-lg md:leading-7 font-light">
+                        <li class="font-bold">Tips</li>
+                        <li>Inspirations</li>
+                        <li>New openings</li>
+                        <li>Carrer development</li>
+                        <li>How to write CV</li>
+                        <li>Salary comparision</li>
+                        <li>Tax calculator</li>
+                    </ul>
+                </div>
+                <div class="w-1/2 md:w-[25%]">
+                    <ul class="text-lg md:leading-7 font-light">
+                        <li class="font-bold">My jobs</li>
+                        <li>Overview</li>
+                        <li>Saved</li>
+                        <li>Application history</li>
+                    </ul>
+                </div>
+                <div class="w-1/2 md:w-[25%]">
+                    <ul class="text-lg md:leading-7 font-light">
+                        <li class="font-bold">Follow us</li>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Linkdin</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
